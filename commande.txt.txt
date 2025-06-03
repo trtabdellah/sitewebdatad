@@ -1,0 +1,14 @@
+sudo apt update
+sudo apt install apache2 php libapache2-mod-php php-mysql mysql-server git unzip
+sudo systemctl start apache2
+sudo systemctl start mysql
+sudo systemctl enable apache2
+sudo systemctl enable mysql
+sudo chown -R www-data:www-data /var/www/html
+sudo chmod -R 755 /var/www/html
+sudo mysql
+CREATE DATABASE banking__system;
+EXIT;
+sudo mysql banking__system < banking__system
+sudo apt install php libapache2-mod-php php-mysql
+sudo systemctl restart apache2
